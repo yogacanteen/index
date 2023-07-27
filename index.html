@@ -49,7 +49,7 @@ body {
 }
 
 .primary {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -160,6 +160,13 @@ nav ul li a {
 #hero-section .text {
   margin-left: 30px;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
 
 #hero-section .visual img {
   margin-left: auto;
@@ -591,6 +598,8 @@ details[open] summary ~ * {
 .visual{
     background-color: #7fd955;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 .logo-canteen{
     width: 260px;
@@ -600,15 +609,24 @@ details[open] summary ~ * {
 }
 .banner-img{
     border-radius: 50%;
-    position: relative;
+   
     /* left: -126px; */
+    position: relative;
+    left: 11rem;
 }
 .gif-custom{
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  transform: rotate(45deg);
 }
 .visual2{
   border-top-right-radius: 21%;
     border-bottom-right-radius: 21%;
+}
+
+
+.spoon{
+  width: 200px;
+  height: 200px;
 }
     </style>
   </head>
@@ -650,6 +668,7 @@ details[open] summary ~ * {
       <div class="visual">
         <img src="./Protein-Salad.webp" class="banner-img" alt="">
         <!-- <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/home-banner.png" alt="" /> -->
+      <img src="./spoon.png" alt="" class="spoon">
       </div>
      
     </div>
@@ -835,7 +854,7 @@ details[open] summary ~ * {
           </div>
         </div>
         <div class="visual">
-          <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/testimonial.png" alt="" />
+          <img src="./pack1.jpeg" style="border-radius: 50%;" alt="" />
         </div>
       </div>
     </div>
